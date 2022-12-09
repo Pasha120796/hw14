@@ -1,0 +1,173 @@
+.list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.main__list {
+    margin: 0 76px;
+    padding: 0;
+
+    @media (min-width: 576px) {
+        margin: 0;
+    }
+
+}
+
+.item {
+
+    @media (min-width: 576px) {
+        max-width: calc(50% - 20px);
+    }
+
+    @media (min-width: 992px) {
+        max-width: calc(100% / 3 - 20px);
+    }
+}
+
+.main__item {
+    margin: 10px 10px;
+}
+
+.item-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: $grey;
+    border-radius: 30px;
+}
+
+.main__item-container {
+    padding: 24px 29px;
+}
+
+.item-visual {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid $grey-t;
+
+    .name-product {
+     align-self: flex-start;
+    color: $blue;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    font-family: 'roboto-regular', Arial, Helvetica, sans-serif;
+    }
+
+    @media (min-width: 576px) {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    @media (min-width: 992px) {
+        font-size: 22px;
+        line-height: 35px;
+    }
+}
+
+.main__img {
+    max-width: 78%;
+
+    @media (min-width: 576px) {
+        max-width: 100%;
+    }
+
+}
+
+.item-price {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'open_sans-regular', Arial, Helvetica, sans-serif;
+
+
+    @media (min-width: 576px) {
+        display: block;
+    }
+
+    @media (min-width: 992px) {
+        display: flex;
+    }
+    .stars {
+     width: 25%;
+    }
+}
+
+.prices {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__prices {
+    margin-left: 5px;
+}
+
+.old-price {
+    color: $grey-t;
+    text-decoration: line-through;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    @media (min-width: 576px) {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    @media (min-width: 992px) {
+        font-size: 18px;
+        line-height: 32px;
+        max-height: 27px;
+        overflow: hidden;
+    }
+}
+
+
+.new-price {
+    color: $blue;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 10px;
+
+    @media (min-width: 576px) {
+        font-size: 16px;
+        line-height: 25px;
+        margin-left: 0;
+    }
+
+    @media (min-width: 992px) {
+        font-size: 18px;
+        line-height: 32px;
+        max-height: 27px;
+        overflow: hidden;
+    }
+
+    @media (min-width: 1100px) {
+        margin-left: 15px;
+    }
+}
+
+.rates {
+    display: flex;
+    justify-content: center;
+
+    .star {
+        max-height: 14px;
+        display: inline-block;
+        vertical-align: middle;
+        transform: perspective(1px) translateZ(0);
+        transition-duration: 0.3s;
+        transition-property: transform;
+
+        &:hover{
+            transform: scale(1.7);
+        }
+    }
+}

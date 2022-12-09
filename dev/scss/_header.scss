@@ -1,0 +1,50 @@
+header {
+    background-color: #fff;
+}
+
+.title {
+    font-family: 'Yellowtail', cursive;
+    color: $green;
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 50px;
+
+    @media (min-width: 576px) {
+        font-size: 36px;
+        line-height: 65px;
+    }
+
+}
+
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.header__title-container {
+    margin: 57px 0 20px;
+}
+
+.header__title{
+    margin: 0;
+    padding: 0;
+}
+
+.h1 {
+    margin: 0;
+    padding: 0;
+    color: $blue;
+    font-family: 'robotobold', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 45px;
+
+    @media (min-width: 576px) {
+        font-size: 45px;
+        line-height: 58px;
+    }
+}
